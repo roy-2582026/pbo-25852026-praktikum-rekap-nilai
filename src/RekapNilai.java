@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class RekapNilai {
+
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -8,16 +9,9 @@ public class RekapNilai {
         int nilai;
         char grade;
 
-        System.out.println("=== REKAP NILAI KELAS ===");
-        System.out.print("Masukkan nilai (0-100): ");
+        System.out.println("=== REKAP NILAI ===");
+        System.out.print("Masukkan nilai: ");
         nilai = input.nextInt();
-
-        // Memeriksa nilai
-        while (nilai < 0 || nilai > 100) {
-            System.out.println("Nilai tidak valid!");
-            System.out.print("Masukkan kembali nilai (0-100): ");
-            nilai = input.nextInt();
-        }
 
         // Menentukan grade
         if (nilai >= 80) {
@@ -34,7 +28,7 @@ public class RekapNilai {
 
         // Menampilkan hasil
         System.out.println();
-        System.out.println("===== HASIL NILAI =====");
+        System.out.println("===== HASIL =====");
         System.out.println("Nilai : " + nilai);
         System.out.println("Grade : " + grade);
 
