@@ -1,3 +1,5 @@
+// Commit 2 - Tambah logika grade
+// Commit 3 - Tambah Perhitugan rata-rata dan status kelas
 import java.util.Scanner;
 
 public class RekapNilai {
